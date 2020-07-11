@@ -1,0 +1,593 @@
+/* nav */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?7kkyc2');
+    src: url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?7kkyc2') format('truetype'), url('../fonts/icomoon.woff?7kkyc2') format('woff'), url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+.all {
+    height: 50px;
+    background-color: #3672e0;
+    margin: auto;
+}
+
+.nav {
+    width: 1000px;
+    height: 50px;
+    background-color: #3672e0;
+    margin-left: 375px;
+}
+
+.nav>li {
+    position: relative;
+    float: left;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.nav>li>a {
+    /* float: left; */
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 30px;
+}
+
+
+/* .nav>li>a:hover {
+    background-color: #18367e;
+} */
+
+.nav ul {
+    display: none;
+    position: absolute;
+    right: -25%;
+    width: 150%;
+    background-color: #3672e0;
+    z-index: 9999;
+}
+
+.nav ul a {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    line-height: 50px;
+}
+
+.search_f {
+    position: relative;
+    top: -43px;
+    left: 15px;
+    width: 200px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.search {
+    position: absolute;
+    top: -7px;
+    left: -110px;
+    float: left;
+    width: 180px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 120px;
+    z-index: 1;
+}
+
+.sousuo {
+    position: absolute;
+    font-family: 'icomoon';
+    top: 130px;
+    left: 225px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.login a {
+    position: absolute;
+    top: 130px;
+    right: 30px;
+    /* margin-top: 10px; */
+    width: 50px;
+    height: 30px;
+    background-color: #18367e;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 30px;
+    color: #ccc;
+}
+
+.client {
+    position: absolute;
+    top: 131px;
+    right: 120px;
+    width: 150px;
+    height: 30px;
+    /* background-color: red; */
+    color: #18367e;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.logout a {
+    position: absolute;
+    top: 130px;
+    right: 30px;
+    /* margin-top: 10px; */
+    width: 80px;
+    height: 30px;
+    background-color: #18367e;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 30px;
+    color: #ccc;
+}
+
+.side {
+    display: none;
+    position: absolute;
+    width: 260px;
+    height: 550px;
+    background-color: #18367e;
+    z-index: 100;
+}
+
+.side_block {
+    position: absolute;
+    width: 260px;
+    height: 550px;
+    background-color: #18367e;
+    z-index: 100;
+}
+
+.side h2,
+.side_block h2 {
+    height: 70px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 70px;
+    color: #fff;
+}
+
+.side li,
+.side_block li {
+    height: 80px;
+}
+
+.side li a,
+.side_block li a {
+    height: 100%;
+    display: block;
+    text-align: center;
+    line-height: 80px;
+    font-size: 18px;
+    color: #fff;
+    transition: margin 0.5s;
+}
+
+.side li a:hover,
+.side_block li a:hover {
+    margin: -10px 30px;
+    background-color: #3672e0;
+}
+
+.pic {
+    perspective: 1000px;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+}
+
+.left_bg {
+    position: absolute;
+    top: 70px;
+    left: -100px;
+    width: 400px;
+    height: 410px;
+    background: url(../img/gdpu2.jpg) no-repeat;
+    transform: rotateY(-20deg);
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -500px;
+    width: 1000px;
+    height: 550px;
+    background: url(../img/gdpu1.jpg) no-repeat center bottom;
+}
+
+.right_bg {
+    position: absolute;
+    top: 70px;
+    right: -100px;
+    width: 400px;
+    height: 410px;
+    background: url(../img/gdpu3.jpg) no-repeat;
+    transform: rotateY(20deg);
+}
+
+.center_cha {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -500px;
+    width: 1000px;
+    height: 550px;
+    transform: rotateY(0);
+    transition: all 1s;
+}
+
+.right_cha {
+    position: absolute;
+    top: 70px;
+    right: -100px;
+    width: 400px;
+    height: 410px;
+    transform: rotateY(20deg);
+    transition: all 1s;
+}
+
+.left_cha {
+    position: absolute;
+    top: 70px;
+    left: -100px;
+    width: 400px;
+    height: 410px;
+    transform: rotateY(-20deg);
+    transition: all 0.3s;
+}
+
+.bgi_one {
+    background: url(../img/gdpu1.jpg) no-repeat center bottom;
+}
+
+.bgi_two {
+    background: url(../img/gdpu2.jpg) no-repeat;
+}
+
+.bgi_three {
+    background: url(../img/gdpu3.jpg) no-repeat;
+}
+
+.z {
+    z-index: -1;
+}
+
+.point {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    height: 15px;
+}
+
+.point li {
+    float: left;
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    cursor: url(img/cur.ico) auto;
+}
+
+.point .current {
+    background-color: #fff;
+}
+
+.tips {
+    height: 50px;
+    margin: auto;
+    /* background-color: #3672e0; */
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 50px;
+    color: #000;
+}
+
+.tips a {
+    position: relative;
+    top: -37px;
+    left: 875px;
+    display: block;
+    width: 50px;
+    height: 25px;
+    background-color: #18367e;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 25px;
+    color: #ccc;
+    margin-right: 10px;
+}
+
+.title {
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.news {
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+.news_l {
+    perspective-origin: left top;
+}
+
+.news_c {
+    perspective-origin: center center;
+}
+
+.news_r {
+    perspective-origin: right top;
+}
+
+.news h1 {
+    color: #000;
+    font-size: 35px;
+    margin: auto;
+}
+
+.box,
+.box_center,
+.box_right {
+    float: left;
+    width: 298px;
+    height: 198px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    transition: all 0.5s;
+}
+
+.box_z {
+    transform: translateZ(150px);
+}
+
+.news .box_center {
+    margin: 100px 105px;
+}
+
+.box h2,
+.box_center h2,
+.box_right h2 {
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+    margin-bottom: 10px;
+}
+
+.box ul li,
+.box_center ul li,
+.box_right ul li {
+    height: 30px;
+    border-bottom: 1px dashed #bbb;
+    line-height: 30px;
+    background: url(../img/jiantou-1.png) no-repeat 0 6px;
+    padding-left: 18px;
+    /* white-space: nowrap; */
+    /* text-overflow: ellipsis; */
+    overflow: hidden;
+}
+
+.box ul li a,
+.box_center ul li a,
+.box_right ul li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #333;
+    /*padding-left: 18px;*/
+    /*margin-left: 18px;*/
+}
+
+.box ul li a:hover,
+.box_center ul li a:hover,
+.box_right ul li a:hover {
+    text-decoration: underline;
+}
+
+.comment {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.com_btn {
+    color: #fff;
+    line-height: 20px;
+}
+
+.comment button {
+    width: 80px;
+    height: 25px;
+    background-color: #3672e0;
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.issue {
+    /* position: relative; */
+    display: none;
+}
+
+textarea {
+    /* display: none; */
+    width: 500px;
+    height: 100px;
+    outline: none;
+    resize: none;
+    margin: auto;
+    margin-left: 505px;
+    font-size: 20px;
+    background-color: #eee;
+}
+
+.send {
+    /* display: none; */
+    position: absolute;
+    top: 1293px;
+    right: 20px;
+    width: 80px;
+    height: 30px;
+    background-color: #3672e0;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 20px;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.shou {
+    /* display: none; */
+    position: absolute;
+    top: 1293px;
+    right: -20px;
+    width: 80px;
+    height: 30px;
+    background-color: #3672e0;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 20px;
+    animation-name: slide_one;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+    0% {
+        right: 20px;
+    }
+    100% {
+        right: 420px;
+    }
+}
+
+@keyframes slide_one {
+    0% {
+        right: -20px;
+    }
+    100% {
+        right: 320px;
+    }
+}
+
+.send_hui {
+    display: none;
+    position: absolute;
+    top: 1293px;
+    /* right: -20px; */
+    width: 80px;
+    height: 30px;
+    background-color: #3672e0;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 20px;
+    animation-name: slide_hui;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.shou_hui {
+    display: none;
+    position: absolute;
+    top: 1293px;
+    /* right: -20px; */
+    width: 80px;
+    height: 30px;
+    background-color: #3672e0;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 20px;
+    animation-name: slide_hui_one;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide_hui {
+    0% {
+        right: 420px;
+    }
+    100% {
+        right: -80px;
+    }
+}
+
+@keyframes slide_hui_one {
+    0% {
+        right: 420px;
+    }
+    100% {
+        right: -80px;
+    }
+}
+
+.alread ul {
+    margin-top: 20px;
+}
+
+.alread ul li {
+    display: none;
+    list-style: none;
+    width: 500px;
+    padding: 5px;
+    /* background-color: rgb(245, 209, 243); */
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    font-size: 14px;
+    margin: 15px 505px;
+    white-space: pre;
+}
+
+.alread ul li a {
+    float: right;
+}
+
+.share {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    width: 250px;
+    height: 100px;
+    font-family: 'icomoon';
+}
+
+.share i {
+    font-size: 16px;
+    color: #fff;
+}
+
+.share a {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 10px;
+}

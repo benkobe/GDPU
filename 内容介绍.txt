@@ -1,0 +1,62 @@
+css文件夹：base.css：公共样式，比如去掉浮动盒子之间产生的外边距，去掉li默认的样式(前面的小黑圆点)，去掉
+		  图片的底部的空白缝隙，鼠标经过button时鼠标样式变为小手模样，去掉a链接的下划线等
+	  common.css：头部和尾部的样式，因为有多个页面的头部和尾部都一样，所以将样式写在一起
+	  grade.css：学生成绩页面样式
+	  index.css：主页面样式
+	  instructor.css：辅导员页面样式
+	  leader.css：学校领导页面样式
+	  login.css：登录页面样式
+	  news.css：近期要闻页面样式
+	  number_of_people.css：各个专业人数页面样式
+	  teacher.css：任课教师页面样式
+	  timeTable.css：课程表页面样式
+
+js文件夹：index.js：主页的js文件
+	index_login.js：登录后主页的js文件
+	login.js：登录页面的js文件
+	table.js：鼠标经过表格时，表格的行会变色，另写一个表格的js文件是因为大量页面用到表格
+
+fonts文件夹、icomoon文件夹、icomoon.zip压缩包：  icon字体图标相关文件
+
+img文件夹：存放图片(写在html文件中，即img)
+
+upload文件夹：存放背景图片(写在css文件中，即backgroung-image)和ico图片
+
+颜色文档：记录主要的颜色色号，尽量使页面的颜色相统一
+
+grade.html：学生成绩页面
+index.html：主页面
+index_login.html：登录之后的主页面
+instructor.htmls：辅导员页面
+leader.html：学校领导页面
+login.html：登录页面
+news.html：近期要闻页面
+news_login.html：登录之后的近期要闻页面
+number_of_people.html：各个专业人数页面
+teacher.html：任课教师页面
+timeTable.html：课程表页面
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
